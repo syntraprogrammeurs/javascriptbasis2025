@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>smoke test</title>
+    <script type="module" src="./js/main.js"></script>
+</head>
+<body>
+
+
+<section
+        class="container py-4" id="h7-node-inspector">
+    <h3>H7 – Node Inspector</h3>
+
+    <p class="mb-2">
+        Onderstaande structuur bevat zowel elementnodes als tekstnodes (spaties /
+        line breaks).
+        Vergelijk <code>childNodes</code> met <code>children</code>.
+    </p>
+
+    <!-- Container to inspect -->
+    <div id="ni_container" class="border rounded p-3 mb-3">
+        Tekst
+        <ul>
+            <li>Item 1</li>
+            <li>
+                Item 2
+                <ul>
+                    <li>Subitem</li>
+                </ul>
+            </li>
+            <li>Item 3</li>
+        </ul>
+        Nog een tekstnode
+    </div>
+
+    <!-- Buttons -->
+    <div class="btn-group mb-3" role="group">
+        <button id="ni_count_childNodes" type="button" class="btn btn-outline-primary">
+            Tel childNodes
+        </button>
+        <button id="ni_count_children" type="button" class="btn btn-outline-primary">
+            Tel children
+        </button>
+    </div>
+
+    <!-- Results -->
+    <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            childNodes
+            <span id="ni_out_nodes" class="badge text-bg-secondary">0</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            children
+            <span id="ni_out_children" class="badge text-bg-secondary">0</span>
+        </li>
+    </ul>
+</section>
+
+
+</body>
+</html>
