@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>smoke test</title>
+    <script type="module" src="./js/main.js"></script>
+</head>
+<body>
+
+
+<section class="container py-4" id="h7-tree-flatten">
+    <h3>H7 – DOM Tree Flattener</h3>
+    <p>Toon alle elementnode-namen (depth-first) van het onderstaande blok.</p>
+    <button class="btn btn-outline-secondary mb-2" data-bs-toggle="collapse"
+            data-bs-target="#tf_src">Toon bron</button>
+    <pre id="tf_src" class="collapse">&lt;div id="tf_root"&gt;
+Tekst
+&lt;ul&gt;
+&lt;li&gt;A&lt;/li&gt;
+&lt;li&gt;B&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;</pre>
+
+    <div id="tf_root" class="border rounded p-3">
+        Tekst
+        <ul><li>A</li><li>B</li></ul>
+    </div>
+
+    <ul id="tf_out" class="list-group mt-2"></ul>
+</section>
+
+
+
+</body>
+</html>
