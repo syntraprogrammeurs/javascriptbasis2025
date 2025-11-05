@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>smoke test</title>
+    <script type="module" src="./js/main.js"></script>
+</head>
+<body>
+
+
+<section class="container py-4" id="h8-document-roots">
+    <h3>H8 – Document Roots Dashboard</h3>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-light bg-light border rounded px-3 mb-4">
+        <span class="navbar-brand fw-semibold">DOM Root Info</span>
+        <button id="rn_refresh" type="button" class="btn btn-outline-primary btn-sm ms-auto">
+            Verversen
+        </button>
+
+
+    </nav>
+
+    <!-- Table with badges -->
+    <table class="table table-bordered align-middle text-center">
+        <thead class="table-light">
+        <tr>
+            <th>Node</th>
+            <th>Naam</th>
+            <th>Children count</th>
+            <th>Heeft children?</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- documentElement (HTML) -->
+        <tr>
+            <td><code>document.documentElement</code></td>
+            <td><span id="rn_html_name" class="badge text-bg-secondary">-
+</span></td>
+            <td><span id="rn_html_children" class="badge text-bg-secondary">0</span></td>
+            <td><span id="rn_html_has" class="badge text-bg-secondary">false</span></td>
+        </tr>
+        <!-- head -->
+        <tr>
+            <td><code>document.head</code></td>
+            <td><span id="rn_head_name" class="badge text-bg-secondary">-
+</span></td>
+            <td><span id="rn_head_children" class="badge text-bg-secondary">0</span></td>
+            <td><span id="rn_head_has" class="badge text-bg-secondary">false</span></td>
+        </tr>
+        <!-- body -->
+        <tr>
+            <td><code>document.body</code></td>
+            <td><span id="rn_body_name" class="badge text-bg-secondary">-
+</span></td>
+            <td><span id="rn_body_children" class="badge text-bg-secondary">0</span></td>
+            <td><span id="rn_body_has" class="badge text-bg-secondary">false</span></td>
+        </tr>
+        </tbody>
+    </table>
+</section>
+
+
+
+
+</body>
+</html>
