@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>smoke test</title>
+    <script type="module" src="./js/main.js"></script>
+</head>
+<body>
+
+<section class="container py-4" id="h8-section-pager">
+    <h3>H8 – Section Pager</h3>
+
+    <button class="btn btn-outline-secondary mb-2" data-bs-toggle="offcanvas"
+            data-bs-target="#sp_nav">Navigatie</button>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="sp_nav">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Ga naar sectie</h5>
+            <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul id="sp_list" class="list-group">
+                <li class="list-group-item">Intro</li>
+                <li class="list-group-item">Over</li>
+                <li class="list-group-item">Contact</li>
+            </ul>
+        </div>
+    </div>
+
+    <nav>
+        <ul class="pagination">
+            <li class="page-item"><button id="sp_prev" class="page-link">Vorige</button></li>
+            <li class="page-item"><button id="sp_next" class="page-link">Volgende</button></li>
+        </ul>
+    </nav>
+
+    <div id="sp_sections">
+        <section class="sp_sec" data-title="Intro">Dit is de intro.</section>
+        <section class="sp_sec d-none" data-title="Over">Over ons.</section>
+        <section class="sp_sec d-none" data-title="Contact">Contacteer ons.</section>
+    </div>
+</section>
+
+</body>
+</html>
