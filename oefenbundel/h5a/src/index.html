@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>smoke test</title>
+    <script type="module" src="./js/main.js"></script>
+</head>
+<body>
+
+
+<section class="container py-4" id="h5-counter-console">
+    <h3>H5 – Counter Console</h3>
+
+    <!-- Button Group -->
+    <div class="btn-group mb-3" role="group" aria-label="Counter controls">
+        <button id="cc_inc1" type="button" class="btn btn-outline-primary">+1</button>
+        <button id="cc_inc5" type="button" class="btn btn-outline-primary">+5</button>
+        <button id="cc_dec1" type="button" class="btn btn-outline-secondary">−1</button>
+        <button id="cc_reset" type="button" class="btn btn-outline-danger">Reset</button>
+    </div>
+
+    <!-- Badge showing current value -->
+    <span id="cc_val" class="badge text-bg-secondary">0</span>
+
+    <!-- Progress Bar -->
+    <div class="progress mt-3" style="height: 25px;">
+        <div
+                id="cc_bar"
+                class="progress-bar"
+                role="progressbar"
+                style="width: 0%"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="0"
+        >
+            0%
+        </div>
+    </div>
+</section>
+
+
+
+
+
+</body>
+</html>
