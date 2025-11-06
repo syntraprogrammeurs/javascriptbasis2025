@@ -8,6 +8,15 @@ import * as bootstrap from 'bootstrap'
 // --------------------------------------
 // Hoofdstuk 12: DOM Selectors
 // --------------------------------------
+function setColor(color) {
+    const boxes = document.querySelectorAll(".kleur-box");
+    boxes.forEach(box => box.style.background = color);
+}
 
+document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("ks_red")?.addEventListener("click", () => setColor("red"));
+    document.getElementById("ks_blue")?.addEventListener("click", () => setColor("blue"));
+    document.getElementById("ks_green")?.addEventListener("click", () => setColor("green"));
+});
 
 
