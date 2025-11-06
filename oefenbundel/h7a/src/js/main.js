@@ -17,7 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Klik: tel ALLE directe kind-nodes (incl. tekst/whitespace)
     btnChildNodes.addEventListener('click', () => {
         // childNodes is een lijst van nodes (element + tekst + comments)
-        const totaal = box.childNodes.length;   // telt ook spaties/line breaks
+        const totaal = box.childNodes.length;
+        console.log(box.childNodes);// telt ook spaties/line breaks
         outNodes.textContent = totaal;          // enkel getal tonen
     });
 
@@ -25,6 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     btnChildren.addEventListener('click', () => {
         // children is een HTMLCollection met alleen element nodes
         const totaal = box.children.length;
+        console.log(box.children);
         outChildren.textContent = totaal;       // enkel getal tonen
     });
 });

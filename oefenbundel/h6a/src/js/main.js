@@ -140,4 +140,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Eerste keer tekenen bij pagina-start
     render();
+    document.write("tester");
 });
