@@ -25,7 +25,8 @@ let currentFilter2 = 'all'
 // Zorgt ervoor dat de juiste filterknop actief (btn-primary) is
 // en de andere knoppen 'outline' blijven (btn-outline-primary).
 
-//Object.entries() maakt van een object een array van arrays, waarin elk binnenste array bestaat uit twee waarden:
+//Object.entries() maakt van een object een array van arrays,
+// waarin elk binnenste array bestaat uit twee waarden:
 // [key, value].
 // Bijvoorbeeld:
 // Object.entries({ a: 10, b: 20 })
