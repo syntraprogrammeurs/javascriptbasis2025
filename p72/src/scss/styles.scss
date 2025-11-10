@@ -34,8 +34,12 @@ $theme-colors-border-subtle-dark:
 @import "bootstrap/scss/bootstrap";
 
 
-.dark-mode {
-  background: #111 !important;
-  color: #fff !important;
+/* Overschrijf Bootstrap achtergrondkleur */
+.rb-default {
+  background-color: #f8f9fa !important;
+}
+
+.rb-green {
+  background-color: lightgreen !important;
 }
 
