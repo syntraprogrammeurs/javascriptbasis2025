@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>smoke test</title>
+    <script type="module" src="./js/main.js"></script>
+</head>
+<body>
+
+<section class="container py-4" id="ex-calc">
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-4">
+            <div class="card shadow-sm">
+                <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
+                    <span>Rekenmachine</span>
+                    <span class="small opacity-75">Standaard</span>
+                </div>
+
+                <div class="card-body bg-black">
+                    <!-- Display -->
+                    <div class="border-0 bg-black text-white text-end p-2 fs-1" id="calc_display" aria-live="polite">0</div>
+                </div>
+
+                <div class="card-body pt-0">
+                    <!-- Memory row -->
+                    <div class="d-grid gap-2 mb-2" style="grid-template-columns: repeat(6, 1fr);">
+                        <button class="btn btn-outline-secondary" id="calc_mc">MC</button>
+                        <button class="btn btn-outline-secondary" id="calc_mr">MR</button>
+                        <button class="btn btn-outline-secondary" id="calc_mplus">M+</button>
+                        <button class="btn btn-outline-secondary" id="calc_mminus">M−</button>
+                        <button class="btn btn-outline-secondary" id="calc_ms">MS</button>
+                        <button class="btn btn-outline-secondary" id="calc_mv" disabled>M▾</button>
+                    </div>
+
+                    <!-- Main keypad -->
+                    <div class="d-grid gap-2" style="grid-template-columns: repeat(4, 1fr);">
+                        <button class="btn btn-outline-secondary" id="btn_pct">%</button>
+                        <button class="btn btn-outline-secondary" id="btn_ce">CE</button>
+                        <button class="btn btn-outline-secondary" id="btn_c">C</button>
+                        <button class="btn btn-outline-secondary" id="btn_back">⌫</button>
+
+                        <button class="btn btn-outline-secondary" id="btn_inv">1/x</button>
+                        <button class="btn btn-outline-secondary" id="btn_pow2">x²</button>
+                        <button class="btn btn-outline-secondary" id="btn_sqrt">√x</button>
+                        <button class="btn btn-outline-secondary" data-op="÷">÷</button>
+
+                        <button class="btn btn-outline-secondary" data-digit="7">7</button>
+                        <button class="btn btn-outline-secondary" data-digit="8">8</button>
+                        <button class="btn btn-outline-secondary" data-digit="9">9</button>
+                        <button class="btn btn-outline-secondary" data-op="×">×</button>
+
+                        <button class="btn btn-outline-secondary" data-digit="4">4</button>
+                        <button class="btn btn-outline-secondary" data-digit="5">5</button>
+                        <button class="btn btn-outline-secondary" data-digit="6">6</button>
+                        <button class="btn btn-outline-secondary" data-op="−">−</button>
+
+                        <button class="btn btn-outline-secondary" data-digit="1">1</button>
+                        <button class="btn btn-outline-secondary" data-digit="2">2</button>
+                        <button class="btn btn-outline-secondary" data-digit="3">3</button>
+                        <button class="btn btn-outline-secondary" data-op="+">+</button>
+
+                        <button class="btn btn-outline-secondary" id="btn_sign">+/−</button>
+                        <button class="btn btn-outline-secondary" data-digit="0">0</button>
+                        <button class="btn btn-outline-secondary" id="btn_comma">,</button>
+                        <button class="btn btn-primary" id="btn_eq">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

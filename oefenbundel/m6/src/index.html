@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>smoke test</title>
+    <script type="module" src="./js/main.js"></script>
+</head>
+<body>
+
+<section class="container py-4" id="ex-m6">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+            <div class="card shadow-sm">
+                <div class="card-header bg-primary text-white">Oefening M6 — Prijs na korting (uitbreiding)</div>
+                <div class="card-body">
+                    <div class="row g-2">
+                        <div class="col-12">
+                            <label for="ex_price" class="form-label">Oorspronkelijke prijs (€)</label>
+                            <input id="ex_price" type="number" step="0.01" class="form-control" placeholder="bijv. 100" />
+                        </div>
+
+                        <div class="col-sm-6">
+                            <label for="ex_mode" class="form-label">Kortingswijze</label>
+                            <select id="ex_mode" class="form-select">
+                                <option value="pct" selected>Percentage (%)</option>
+                                <option value="eur">Vast bedrag (€)</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="ex_disc" class="form-label">Korting (waarde)</label>
+                            <input id="ex_disc" type="number" step="0.01" class="form-control" placeholder="bijv. 15" />
+                        </div>
+
+                        <div class="col-12">
+                            <label for="ex_coupon" class="form-label">Coupon (optioneel)</label>
+                            <input id="ex_coupon" class="form-control" placeholder="bijv. SAVE10" />
+                            <div class="form-text">Coupon <strong>SAVE10</strong> geeft extra 10% korting bovenop de gekozen korting.</div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="ex_floor" class="form-label">Minimum eindprijs (€)</label>
+                            <input id="ex_floor" type="number" step="0.01" class="form-control" value="1.00" />
+                            <div class="form-text">De eindprijs wordt nooit lager dan dit bedrag.</div>
+                        </div>
+                    </div>
+
+                    <button id="ex_btn" class="btn btn-primary w-100 my-3">Bereken nieuwe prijs</button>
+
+                    <div id="ex_out" class="alert alert-secondary mb-0" role="status" aria-live="polite">
+                        Resultaat verschijnt hier…
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+</body>
+</html>
