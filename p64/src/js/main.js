@@ -24,6 +24,7 @@ function handleSubmit(event) {
     const name = document.getElementById("ev_name").value.trim();
     const status = document.getElementById("ev_status");
 
+
     if (!name) {
         status.className = "alert alert-danger mb-0 mt-3";
         status.textContent = "❌ Vul een naam in";
