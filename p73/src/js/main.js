@@ -20,6 +20,7 @@ function renderTodos() {
       </li>
     `)
         .join("");
+
 }
 
 function addTodo(e) {
@@ -45,10 +46,12 @@ function addTodo(e) {
 }
 
 function handleTodoClick(e) {
+    console.log(e)
     const idx = e.target.dataset.idx;
 
     // Toggle done
     if (e.target.classList.contains("todo-text")) {
+
         taken2[idx].done = !taken2[idx].done;
         renderTodos();
         return;
