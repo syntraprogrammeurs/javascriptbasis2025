@@ -34,8 +34,9 @@ $theme-colors-border-subtle-dark:
 @import "bootstrap/scss/bootstrap";
 
 
-.dark-mode {
-  background: #111 !important;
-  color: #fff !important;
+li.todo-done .todo-text {
+  text-decoration: line-through;
+  opacity: 0.6;
 }
+
 
