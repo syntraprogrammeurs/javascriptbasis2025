@@ -5,9 +5,6 @@ import '../scss/styles.scss'
 import * as bootstrap from 'bootstrap'
 
 //eigen js
-// ---------------------------------------------
-// Hoofdstuk 20: ES6 Classes + extends + super
-// ---------------------------------------------
 
 // --------------------------------------
 // Hoofdstuk 21: Mini Webshop Project
