@@ -20,7 +20,7 @@ async function loadUsers() {
         const users = await res.json();
 
         list.innerHTML = users
-            .map(u => `<li class="list-group-item"><strong>${u.name}</strong><br>${u.email}</li>`)
+            .map(u => `<li class="list-group-item"><strong>${u.name}</strong><br>${u.email} -${u.username}</li>`)
             .join("");
 
         status.className = "alert alert-success mb-0";
